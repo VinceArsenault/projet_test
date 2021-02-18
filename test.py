@@ -1,14 +1,42 @@
-# programme bidon
+from random import randrange
 
-print('\n \n \n \n \n \n         Welcome to the dumest app you\'ll ever see\n \n Enter: quit() , to exit the programme \n \n Guest the movie about the man with a fury colar jacket, with ducks...\n')
+
+print('\n \n \n \n \n \n         Welcome to the dumbest app you\'ll ever see\n \n Enter: quit() , to exit the programme\n\n')
 
 def main():
+    print('Enter the name of the game you wanna play \n\n enter : movie, to play guest the movie\n\n enter : number, to play guest the number\n\n')
+    game_name = input('Enter the game name here:  ')
+    if game_name == 'movie':
+        guest_movie()
+    if game_name =='number':
+        guest_num()
 
+def guest_num():
+    num_try = 0
+    continu = True
+    num_to_guest = randrange(0,51)
+    while continu:
+        print('guest a number in between 0 and 50 ')
+        num_guested = int(input('What is your guest?: '))
+        if num_guested == num_to_guest:
+            print('You got it bud !')
+            continu = False
+        if num_guested >= num_to_guest + 10:
+            print('You can go a bit lower you crazy fool')
+        if num_guested >= num_to_guest + 5:
+            print('you can go a tiny bit lower but you are getting there')
+        if num_guested <= num_to_guest - 10: 
+            print(' you can fo a bit higher you extremist turtle')
+        if num_guested <= num_to_guest - 5: 
+            print('you can go a tiny bit higher but you are getting there')
+
+
+def guest_movie():
     num_try = 0
     continu = True
 
     while continu:
-        
+        print('Name a movie about a guy with a leather jacket flighing with ducks\n')
         film = input('Enter movie\'s name: ')
 
         # if answer if right
@@ -33,5 +61,8 @@ def main():
                 print('\ndoes uline even make movie ?\n')        
         if film == 'quit()':
             continu = False
+
+def 
+
 
 main()
