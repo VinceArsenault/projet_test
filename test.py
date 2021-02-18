@@ -1,26 +1,37 @@
 # programme bidon
 
+print('\n \n Welcome to the dumest app you\'ll ever see\n Enter: quit() , to exit the programme \n \n Guest the movie about the man with a fury colar jacket, with ducks...\n')
+
 def main():
+
     num_try = 0
     continu = True
-    while continu:
-        film = input('Entrez un film: ')
 
-        if film == 'Tape Gun':
+    while continu:
+        
+        film = input('Enter movie\'s name: ')
+
+        if (film) == 'tape gun':
             print('Got it ! Unline\'s the best')
             continu = False
-        else:
+
+      
+            
+
+        if film != 'tape gun' and film != 'quit()':
             num_try += 1 
-            print('please try again')
-        if num_try == 2:
-            print('might be sticky on one side...')
-        elif num_try == 3:
-            print('might even carry weapon...')
-        elif num_try == 4:
-            print('so we said it got glu and weapon...')
-        elif num_try >= 5:
-            print('does uline even make movie ?')
-        if num_try == "quit":
-            continnu = False
+
+            if num_try == 1:
+                print('\n nah...please try again \n ')
+            if num_try == 2:
+                print('\nnope, it might be sticky on one side...')
+            elif num_try == 3:
+                print('\noh well...but might even carry weapon...')
+            elif num_try == 4:
+                print('\nso we said it got glu and weapon...')
+            if num_try >= 5:
+                print('\ndoes uline even make movie ?')        
+        if film == 'quit()':
+            continu = False
 
 main()
