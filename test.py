@@ -1,10 +1,10 @@
 from random import randrange
 import webbrowser
 
-print('\n \n \n \n \n \n         Welcome to the dumbest app you\'ll ever see\n \n Enter: quit() , to exit the programme\n\n')
+print('\n \n \n \n         Welcome to the dumbest app you\'ll ever see\nEnter: quit() , to exit the programme\n')
 
 def main():
-    print('Enter the name of the game you wanna play \n\n enter : movie, to play guest the movie\n\n enter : number, to play guest the number\n\n')
+    print('Enter the name of the game you wanna play \n movie: to play guest the movie\n number: to play guest the number\n google: to ask google a question')
     game_name = input('Enter the game name here:  ')
     if game_name == 'movie':
         guest_movie()
