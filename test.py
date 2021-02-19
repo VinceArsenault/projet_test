@@ -1,5 +1,5 @@
 from random import randrange
-
+import webbrowser
 
 print('\n \n \n \n \n \n         Welcome to the dumbest app you\'ll ever see\n \n Enter: quit() , to exit the programme\n\n')
 
@@ -10,6 +10,8 @@ def main():
         guest_movie()
     if game_name =='number':
         guest_num()
+    if game_name == 'google':
+        ask_google()
 
 def guest_num():
     num_try = 0
@@ -62,7 +64,9 @@ def guest_movie():
         if film == 'quit()':
             continu = False
 
-def 
-
+def ask_google():
+    ask = input('ask something to your friend google:  ')
+    chrome = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s'
+    webbrowser.get(chrome).open_new('http://google.com/search?q=' + ask)
 
 main()
