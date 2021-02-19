@@ -65,8 +65,10 @@ def guest_movie():
             continu = False
 
 def ask_google():
-    ask = input('ask something to your friend google:  ')
-    chrome = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s'
-    webbrowser.get(chrome).open_new('http://google.com/search?q=' + ask)
+    on = True
+    while on :
+        ask = input('ask something to your friend google:  ')
+        chrome = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s'
+        webbrowser.get(chrome).open_new('http://google.com/search?q=' + ask)
 
 main()
